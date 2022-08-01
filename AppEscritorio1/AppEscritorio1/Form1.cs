@@ -26,5 +26,22 @@ namespace AppEscritorio1
         {
             MessageBox.Show("Cerrando formulario");
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usted acaba de cambiar de color al botón");
+            btn1.BackgroundImage = null;
+            btn1.BackColor = Color.AntiqueWhite;
+        }
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs click = (MouseEventArgs)e;
+            if (click.Button == MouseButtons.Left)
+                MessageBox.Show("Presiono el botón Izquierdo", "Atención");
+            else if (click.Button == MouseButtons.Right)
+                MessageBox.Show("Presiono el Botón Derecho", "Atención");
+            else if (click.Button == MouseButtons.Middle)
+                MessageBox.Show("Presiono el botón del Medio", "Atención");
+        }
     }
 }

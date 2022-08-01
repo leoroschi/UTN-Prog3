@@ -29,7 +29,20 @@ namespace AppEscritorio1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana1));
+            this.btn1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btn1
+            // 
+            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
+            this.btn1.Location = new System.Drawing.Point(344, 378);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(93, 29);
+            this.btn1.TabIndex = 0;
+            this.btn1.Text = "button1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Ventana1
             // 
@@ -37,6 +50,7 @@ namespace AppEscritorio1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Ventana1";
@@ -45,11 +59,14 @@ namespace AppEscritorio1
             this.Text = "Proyecto 1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ventana1_FormClosed);
             this.Load += new System.EventHandler(this.Ventana1_Load);
+            this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn1;
     }
 }
 
