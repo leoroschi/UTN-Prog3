@@ -1,7 +1,7 @@
 ﻿
 namespace AppEscritorio1
 {
-    partial class Form1
+    partial class Ventana1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,10 +29,24 @@ namespace AppEscritorio1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Ventana1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Ventana1";
+            this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Proyecto 1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ventana1_FormClosed);
+            this.Load += new System.EventHandler(this.Ventana1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

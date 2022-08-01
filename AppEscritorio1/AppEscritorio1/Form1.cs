@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace AppEscritorio1
 {
-    public partial class Form1 : Form
+    public partial class Ventana1 : Form
     {
-        public Form1()
+        public Ventana1()
         {
             InitializeComponent();
+        }
+
+        private void Ventana1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bienvenidos a Aplicación 1");
+        }
+
+        private void Ventana1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Cerrando formulario");
         }
     }
 }
