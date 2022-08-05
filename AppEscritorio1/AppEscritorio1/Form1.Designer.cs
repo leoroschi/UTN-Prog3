@@ -31,6 +31,7 @@ namespace AppEscritorio1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana1));
             this.btn1 = new System.Windows.Forms.Button();
+            this.lblPrimerEtiqueta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn1
@@ -44,12 +45,27 @@ namespace AppEscritorio1
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // lblPrimerEtiqueta
+            // 
+            this.lblPrimerEtiqueta.AutoSize = true;
+            this.lblPrimerEtiqueta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPrimerEtiqueta.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrimerEtiqueta.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblPrimerEtiqueta.Location = new System.Drawing.Point(102, 58);
+            this.lblPrimerEtiqueta.Name = "lblPrimerEtiqueta";
+            this.lblPrimerEtiqueta.Size = new System.Drawing.Size(115, 30);
+            this.lblPrimerEtiqueta.TabIndex = 1;
+            this.lblPrimerEtiqueta.Text = "Etiqueta1";
+            this.lblPrimerEtiqueta.MouseLeave += new System.EventHandler(this.lblPrimerEtiqueta_MouseLeave);
+            this.lblPrimerEtiqueta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblPrimerEtiqueta_MouseMove);
+            // 
             // Ventana1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPrimerEtiqueta);
             this.Controls.Add(this.btn1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -61,12 +77,14 @@ namespace AppEscritorio1
             this.Load += new System.EventHandler(this.Ventana1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Label lblPrimerEtiqueta;
     }
 }
 
