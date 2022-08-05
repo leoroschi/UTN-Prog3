@@ -43,5 +43,17 @@ namespace AppEscritorio1
             else if (click.Button == MouseButtons.Middle)
                 MessageBox.Show("Presiono el botón del Medio", "Atención");
         }
+
+        private void lblPrimerEtiqueta_MouseMove(object sender, MouseEventArgs e)
+        {
+            lblPrimerEtiqueta.BackColor = Color.Red;
+            lblPrimerEtiqueta.Cursor = Cursors.Hand;
+        }
+
+        private void lblPrimerEtiqueta_MouseLeave(object sender, EventArgs e)
+        {
+            lblPrimerEtiqueta.BackColor = System.Drawing.SystemColors.Control;
+            lblPrimerEtiqueta.Cursor = Cursors.Arrow;
+        }
     }
 }
