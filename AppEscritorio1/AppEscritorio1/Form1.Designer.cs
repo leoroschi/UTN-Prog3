@@ -30,28 +30,29 @@ namespace AppEscritorio1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana1));
-            this.btn1 = new System.Windows.Forms.Button();
+            this.btnCambioColor = new System.Windows.Forms.Button();
             this.lblPrimerEtiqueta = new System.Windows.Forms.Label();
             this.tBprueba = new System.Windows.Forms.TextBox();
-            this.btn2 = new System.Windows.Forms.Button();
+            this.btnValidar = new System.Windows.Forms.Button();
             this.txtTextBox2 = new System.Windows.Forms.TextBox();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIrFormulario2 = new System.Windows.Forms.Button();
+            this.btnFormulario3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn1
+            // btnCambioColor
             // 
-            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
-            this.btn1.Location = new System.Drawing.Point(102, 362);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(93, 29);
-            this.btn1.TabIndex = 0;
-            this.btn1.Text = "button1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btnCambioColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCambioColor.BackgroundImage")));
+            this.btnCambioColor.Location = new System.Drawing.Point(102, 362);
+            this.btnCambioColor.Name = "btnCambioColor";
+            this.btnCambioColor.Size = new System.Drawing.Size(93, 29);
+            this.btnCambioColor.TabIndex = 0;
+            this.btnCambioColor.Text = "Cambia Color";
+            this.btnCambioColor.UseVisualStyleBackColor = true;
+            this.btnCambioColor.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lblPrimerEtiqueta
             // 
@@ -76,16 +77,16 @@ namespace AppEscritorio1
             this.tBprueba.TabIndex = 2;
             this.tBprueba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBprueba_KeyPress);
             // 
-            // btn2
+            // btnValidar
             // 
-            this.btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn2.BackgroundImage")));
-            this.btn2.Location = new System.Drawing.Point(274, 362);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(93, 29);
-            this.btn2.TabIndex = 3;
-            this.btn2.Text = "button2";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.button1_Click);
+            this.btnValidar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnValidar.BackgroundImage")));
+            this.btnValidar.Location = new System.Drawing.Point(274, 362);
+            this.btnValidar.Name = "btnValidar";
+            this.btnValidar.Size = new System.Drawing.Size(93, 29);
+            this.btnValidar.TabIndex = 3;
+            this.btnValidar.Text = "Valida Texto";
+            this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtTextBox2
             // 
@@ -122,30 +123,40 @@ namespace AppEscritorio1
             this.lblDescripcion.Text = "En este formulario se probaron algunas funcionalidades\r\n y propiedades de los tex" +
     "tbox y botones y no tiene\r\nfuncionalidad alguna mas que probar propiedades";
             // 
-            // button1
+            // btnIrFormulario2
             // 
-            this.button1.Location = new System.Drawing.Point(445, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 29);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnIrFormulario2.Location = new System.Drawing.Point(445, 362);
+            this.btnIrFormulario2.Name = "btnIrFormulario2";
+            this.btnIrFormulario2.Size = new System.Drawing.Size(172, 29);
+            this.btnIrFormulario2.TabIndex = 7;
+            this.btnIrFormulario2.Text = "Ir al formulario 2";
+            this.btnIrFormulario2.UseVisualStyleBackColor = true;
+            this.btnIrFormulario2.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnFormulario3
+            // 
+            this.btnFormulario3.Location = new System.Drawing.Point(445, 423);
+            this.btnFormulario3.Name = "btnFormulario3";
+            this.btnFormulario3.Size = new System.Drawing.Size(172, 29);
+            this.btnFormulario3.TabIndex = 8;
+            this.btnFormulario3.Text = "Ir al formulario 3";
+            this.btnFormulario3.UseVisualStyleBackColor = true;
             // 
             // Ventana1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(714, 489);
+            this.Controls.Add(this.btnFormulario3);
+            this.Controls.Add(this.btnIrFormulario2);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTextBox2);
-            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btnValidar);
             this.Controls.Add(this.tBprueba);
             this.Controls.Add(this.lblPrimerEtiqueta);
-            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btnCambioColor);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Ventana1";
@@ -163,15 +174,16 @@ namespace AppEscritorio1
 
         #endregion
 
-        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnCambioColor;
         private System.Windows.Forms.Label lblPrimerEtiqueta;
         private System.Windows.Forms.TextBox tBprueba;
-        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btnValidar;
         private System.Windows.Forms.TextBox txtTextBox2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIrFormulario2;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnFormulario3;
     }
 }
 

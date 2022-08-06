@@ -19,10 +19,7 @@ namespace AppEscritorio1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Ventana1 = new Ventana1();
-            Ventana1.Focus();
-            Form Formulario = new Form2();
-            Formulario.Close();
+            this.Close();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -62,7 +59,9 @@ namespace AppEscritorio1
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Form Formulario = new Ventana1();
+            Formulario.Close();
         }
     }
 }
