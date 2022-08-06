@@ -55,5 +55,24 @@ namespace AppEscritorio1
             lblPrimerEtiqueta.BackColor = System.Drawing.SystemColors.Control;
             lblPrimerEtiqueta.Cursor = Cursors.Arrow;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (tBprueba.Text == "")
+                tBprueba.BackColor = Color.Cyan;
+            else
+                tBprueba.BackColor = System.Drawing.SystemColors.Control;
+        }
+
+        private void tBprueba_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 48 || e.KeyChar > 59) && e.KeyChar != 8)
+                e.Handled = true;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tiene " + txtTextBox2.Text.Length + " Caracteres");
+        }
     }
 }

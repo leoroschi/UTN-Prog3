@@ -32,12 +32,15 @@ namespace AppEscritorio1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana1));
             this.btn1 = new System.Windows.Forms.Button();
             this.lblPrimerEtiqueta = new System.Windows.Forms.Label();
+            this.tBprueba = new System.Windows.Forms.TextBox();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.txtTextBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
-            this.btn1.Location = new System.Drawing.Point(344, 378);
+            this.btn1.Location = new System.Drawing.Point(102, 362);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(93, 29);
             this.btn1.TabIndex = 0;
@@ -59,12 +62,45 @@ namespace AppEscritorio1
             this.lblPrimerEtiqueta.MouseLeave += new System.EventHandler(this.lblPrimerEtiqueta_MouseLeave);
             this.lblPrimerEtiqueta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblPrimerEtiqueta_MouseMove);
             // 
+            // tBprueba
+            // 
+            this.tBprueba.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tBprueba.Location = new System.Drawing.Point(102, 91);
+            this.tBprueba.Name = "tBprueba";
+            this.tBprueba.Size = new System.Drawing.Size(184, 20);
+            this.tBprueba.TabIndex = 2;
+            this.tBprueba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBprueba_KeyPress);
+            // 
+            // btn2
+            // 
+            this.btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn2.BackgroundImage")));
+            this.btn2.Location = new System.Drawing.Point(274, 362);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(93, 29);
+            this.btn2.TabIndex = 3;
+            this.btn2.Text = "button2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtTextBox2
+            // 
+            this.txtTextBox2.Location = new System.Drawing.Point(102, 128);
+            this.txtTextBox2.Multiline = true;
+            this.txtTextBox2.Name = "txtTextBox2";
+            this.txtTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTextBox2.Size = new System.Drawing.Size(184, 117);
+            this.txtTextBox2.TabIndex = 4;
+            this.txtTextBox2.Leave += new System.EventHandler(this.textBox1_Leave);
+            // 
             // Ventana1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtTextBox2);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.tBprueba);
             this.Controls.Add(this.lblPrimerEtiqueta);
             this.Controls.Add(this.btn1);
             this.MaximizeBox = false;
@@ -85,6 +121,9 @@ namespace AppEscritorio1
 
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label lblPrimerEtiqueta;
+        private System.Windows.Forms.TextBox tBprueba;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.TextBox txtTextBox2;
     }
 }
 
