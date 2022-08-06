@@ -74,5 +74,14 @@ namespace AppEscritorio1
         {
             MessageBox.Show("Tiene " + txtTextBox2.Text.Length + " Caracteres");
         }
+        
+        /// Logré hacer aparecer el formulario 2 (Form2), queda pendiente cerrar la primer ventana
+        private void button1_Click_1(object sender, EventArgs e)
+        { 
+            Form Formulario = new Form2();
+            Formulario.Show();
+            Form Ventana1 = new Ventana1();
+            Ventana1.Hide();
+        }
     }
 }
