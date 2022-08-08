@@ -40,13 +40,14 @@ namespace AppEscritorio1
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.btnIrFormulario2 = new System.Windows.Forms.Button();
             this.btnFormulario3 = new System.Windows.Forms.Button();
+            this.btnFormulario4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCambioColor
             // 
             this.btnCambioColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCambioColor.BackgroundImage")));
-            this.btnCambioColor.Location = new System.Drawing.Point(102, 362);
+            this.btnCambioColor.Location = new System.Drawing.Point(131, 380);
             this.btnCambioColor.Name = "btnCambioColor";
             this.btnCambioColor.Size = new System.Drawing.Size(93, 29);
             this.btnCambioColor.TabIndex = 0;
@@ -73,14 +74,14 @@ namespace AppEscritorio1
             this.tBprueba.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tBprueba.Location = new System.Drawing.Point(102, 179);
             this.tBprueba.Name = "tBprueba";
-            this.tBprueba.Size = new System.Drawing.Size(184, 20);
+            this.tBprueba.Size = new System.Drawing.Size(515, 20);
             this.tBprueba.TabIndex = 2;
             this.tBprueba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBprueba_KeyPress);
             // 
             // btnValidar
             // 
             this.btnValidar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnValidar.BackgroundImage")));
-            this.btnValidar.Location = new System.Drawing.Point(274, 362);
+            this.btnValidar.Location = new System.Drawing.Point(281, 380);
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Size = new System.Drawing.Size(93, 29);
             this.btnValidar.TabIndex = 3;
@@ -90,11 +91,11 @@ namespace AppEscritorio1
             // 
             // txtTextBox2
             // 
-            this.txtTextBox2.Location = new System.Drawing.Point(102, 223);
+            this.txtTextBox2.Location = new System.Drawing.Point(102, 222);
             this.txtTextBox2.Multiline = true;
             this.txtTextBox2.Name = "txtTextBox2";
             this.txtTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTextBox2.Size = new System.Drawing.Size(184, 117);
+            this.txtTextBox2.Size = new System.Drawing.Size(308, 133);
             this.txtTextBox2.TabIndex = 4;
             this.txtTextBox2.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
@@ -125,7 +126,7 @@ namespace AppEscritorio1
             // 
             // btnIrFormulario2
             // 
-            this.btnIrFormulario2.Location = new System.Drawing.Point(445, 362);
+            this.btnIrFormulario2.Location = new System.Drawing.Point(445, 222);
             this.btnIrFormulario2.Name = "btnIrFormulario2";
             this.btnIrFormulario2.Size = new System.Drawing.Size(172, 29);
             this.btnIrFormulario2.TabIndex = 7;
@@ -135,7 +136,7 @@ namespace AppEscritorio1
             // 
             // btnFormulario3
             // 
-            this.btnFormulario3.Location = new System.Drawing.Point(445, 423);
+            this.btnFormulario3.Location = new System.Drawing.Point(445, 274);
             this.btnFormulario3.Name = "btnFormulario3";
             this.btnFormulario3.Size = new System.Drawing.Size(172, 29);
             this.btnFormulario3.TabIndex = 8;
@@ -143,12 +144,23 @@ namespace AppEscritorio1
             this.btnFormulario3.UseVisualStyleBackColor = true;
             this.btnFormulario3.Click += new System.EventHandler(this.btnFormulario3_Click);
             // 
+            // btnFormulario4
+            // 
+            this.btnFormulario4.Location = new System.Drawing.Point(445, 326);
+            this.btnFormulario4.Name = "btnFormulario4";
+            this.btnFormulario4.Size = new System.Drawing.Size(172, 29);
+            this.btnFormulario4.TabIndex = 9;
+            this.btnFormulario4.Text = "Ir al formulario 4";
+            this.btnFormulario4.UseVisualStyleBackColor = true;
+            this.btnFormulario4.Click += new System.EventHandler(this.btnFormulario4_Click);
+            // 
             // Ventana1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(714, 489);
+            this.Controls.Add(this.btnFormulario4);
             this.Controls.Add(this.btnFormulario3);
             this.Controls.Add(this.btnIrFormulario2);
             this.Controls.Add(this.lblDescripcion);
@@ -185,6 +197,7 @@ namespace AppEscritorio1
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnFormulario3;
+        private System.Windows.Forms.Button btnFormulario4;
     }
 }
 

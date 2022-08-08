@@ -64,6 +64,12 @@
     <Compile Include="MasControles.Designer.cs">
       <DependentUpon>MasControles.cs</DependentUpon>
     </Compile>
+    <Compile Include="P7Richtextbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P7Richtextbox.Designer.cs">
+      <DependentUpon>P7Richtextbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasControles.resx">
       <DependentUpon>MasControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P7Richtextbox.resx">
+      <DependentUpon>P7Richtextbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

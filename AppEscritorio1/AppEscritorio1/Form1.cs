@@ -87,5 +87,11 @@ namespace AppEscritorio1
             Form Formulario = new MasControles();
             Formulario.Show();
         }
+
+        private void btnFormulario4_Click(object sender, EventArgs e)
+        {
+            Form Formulario = new P7Richtextbox();
+            Formulario.Show(); 
+        }
     }
 }
