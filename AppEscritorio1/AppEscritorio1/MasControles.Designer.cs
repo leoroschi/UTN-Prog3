@@ -33,11 +33,12 @@ namespace AppEscritorio1
             this.rbtnMujer = new System.Windows.Forms.RadioButton();
             this.rbtnHombre = new System.Windows.Forms.RadioButton();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.cboxProgramador = new System.Windows.Forms.CheckBox();
             this.btnOk = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSalida = new System.Windows.Forms.TextBox();
             this.lblSalida = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,12 +88,13 @@ namespace AppEscritorio1
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNombre.Location = new System.Drawing.Point(117, 52);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(450, 20);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // cboxProgramador
             // 
@@ -116,15 +118,20 @@ namespace AppEscritorio1
             this.btnOk.TabIndex = 4;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // textBox2
+            // txtSalida
             // 
-            this.textBox2.Location = new System.Drawing.Point(32, 274);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(535, 179);
-            this.textBox2.TabIndex = 5;
+            this.txtSalida.Enabled = false;
+            this.txtSalida.HideSelection = false;
+            this.txtSalida.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtSalida.Location = new System.Drawing.Point(32, 274);
+            this.txtSalida.Multiline = true;
+            this.txtSalida.Name = "txtSalida";
+            this.txtSalida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSalida.Size = new System.Drawing.Size(535, 179);
+            this.txtSalida.TabIndex = 5;
+            this.txtSalida.Text = "No se permite escribir en el cuadro de salida\r\n";
             // 
             // lblSalida
             // 
@@ -136,21 +143,33 @@ namespace AppEscritorio1
             this.lblSalida.TabIndex = 6;
             this.lblSalida.Text = "Salida";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(588, 427);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 25);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MasControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(720, 484);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblSalida);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSalida);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.cboxProgramador);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.gbox);
             this.Name = "MasControles";
             this.Text = "RadioButton y CheckBox";
+            this.Load += new System.EventHandler(this.MasControles_Load);
             this.gbox.ResumeLayout(false);
             this.gbox.PerformLayout();
             this.ResumeLayout(false);
@@ -164,10 +183,11 @@ namespace AppEscritorio1
         private System.Windows.Forms.RadioButton rbtnMujer;
         private System.Windows.Forms.RadioButton rbtnHombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.CheckBox cboxProgramador;
         private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblSalida;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtSalida;
     }
 }

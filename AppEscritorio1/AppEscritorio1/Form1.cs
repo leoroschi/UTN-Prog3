@@ -81,5 +81,11 @@ namespace AppEscritorio1
             Form Formulario = new Form2();
             Formulario.Show();
         }
+
+        private void btnFormulario3_Click(object sender, EventArgs e)
+        {
+            Form Formulario = new MasControles();
+            Formulario.Show();
+        }
     }
 }

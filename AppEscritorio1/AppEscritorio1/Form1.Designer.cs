@@ -141,6 +141,7 @@ namespace AppEscritorio1
             this.btnFormulario3.TabIndex = 8;
             this.btnFormulario3.Text = "Ir al formulario 3";
             this.btnFormulario3.UseVisualStyleBackColor = true;
+            this.btnFormulario3.Click += new System.EventHandler(this.btnFormulario3_Click);
             // 
             // Ventana1
             // 
