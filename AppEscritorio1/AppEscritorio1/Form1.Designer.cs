@@ -45,6 +45,7 @@ namespace AppEscritorio1
             this.lblPractica2 = new System.Windows.Forms.Label();
             this.lblPactica3 = new System.Windows.Forms.Label();
             this.lblPractica4 = new System.Windows.Forms.Label();
+            this.btnP8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,7 +166,7 @@ namespace AppEscritorio1
             this.btnTryCatch.Name = "btnTryCatch";
             this.btnTryCatch.Size = new System.Drawing.Size(196, 29);
             this.btnTryCatch.TabIndex = 10;
-            this.btnTryCatch.Text = "P8 Tratamiento de errores";
+            this.btnTryCatch.Text = "Tratamiento de errores (TryCatch)";
             this.btnTryCatch.UseVisualStyleBackColor = true;
             this.btnTryCatch.Click += new System.EventHandler(this.btnTryCatch_Click);
             // 
@@ -196,12 +197,23 @@ namespace AppEscritorio1
             this.lblPractica4.TabIndex = 13;
             this.lblPractica4.Text = "Practica 4 control textbox";
             // 
+            // btnP8
+            // 
+            this.btnP8.Location = new System.Drawing.Point(421, 438);
+            this.btnP8.Name = "btnP8";
+            this.btnP8.Size = new System.Drawing.Size(196, 29);
+            this.btnP8.TabIndex = 14;
+            this.btnP8.Text = "P8 Listbox Checkedlistbox";
+            this.btnP8.UseVisualStyleBackColor = true;
+            this.btnP8.Click += new System.EventHandler(this.btnP8_Click);
+            // 
             // Ventana1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(714, 489);
+            this.Controls.Add(this.btnP8);
             this.Controls.Add(this.lblPractica4);
             this.Controls.Add(this.lblPactica3);
             this.Controls.Add(this.lblPractica2);
@@ -249,6 +261,7 @@ namespace AppEscritorio1
         private System.Windows.Forms.Label lblPractica4;
         private System.Windows.Forms.Label lblPactica3;
         private System.Windows.Forms.Label lblPractica2;
+        private System.Windows.Forms.Button btnP8;
     }
 }
 

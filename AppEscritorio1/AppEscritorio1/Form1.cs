@@ -18,12 +18,12 @@ namespace AppEscritorio1
         }
         private void Ventana1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Bienvenidos a Aplicación 1");
+            /// MessageBox.Show("Bienvenidos a Aplicación 1"); Le borré los mensajes porque eran re gedes
         }
 
         private void Ventana1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MessageBox.Show("Cerrando formulario");
+           /// MessageBox.Show("Cerrando formulario");
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -96,6 +96,12 @@ namespace AppEscritorio1
         private void btnTryCatch_Click(object sender, EventArgs e)
         {
             Form Formulario = new TryCatch();
+            Formulario.Show();
+        }
+
+        private void btnP8_Click(object sender, EventArgs e)
+        {
+            Form Formulario = new P8();
             Formulario.Show();
         }
     }

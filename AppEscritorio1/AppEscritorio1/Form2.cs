@@ -61,7 +61,7 @@ namespace AppEscritorio1
         {
             this.Close();
             Form Formulario = new Ventana1();
-            Formulario.Close();
+            Formulario.Focus();
         }
     }
 }
