@@ -16,7 +16,6 @@ namespace AppEscritorio1
         {
             InitializeComponent();
         }
-
         private void Ventana1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Bienvenidos a Aplicación 1");
@@ -92,6 +91,12 @@ namespace AppEscritorio1
         {
             Form Formulario = new P7Richtextbox();
             Formulario.Show(); 
+        }
+
+        private void btnTryCatch_Click(object sender, EventArgs e)
+        {
+            Form Formulario = new TryCatch();
+            Formulario.Show();
         }
     }
 }
